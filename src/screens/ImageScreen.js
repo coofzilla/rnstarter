@@ -1,10 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import ImageDetail from '../components/ImageDetail';
 
-const ImageScreen = ({ navigation }) => {
+const ImageScreen = () => {
   return (
     <View>
-      <Text>Image Screen</Text>
+      <ImageDetail />
+      <ImageDetail />
+      <ImageDetail />
     </View>
   );
 };
