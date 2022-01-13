@@ -22,6 +22,7 @@ const CounterScreen = () => {
       <Button
         title="Increase"
         onPress={() => {
+          //dispatched object is the action
           dispatch({ type: 'increase', payload: 1 });
         }}
       />
