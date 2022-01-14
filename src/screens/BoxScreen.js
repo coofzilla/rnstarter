@@ -2,26 +2,35 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
 const BoxScreen = () => {
+  console.log(<Text />);
   return (
     <View style={styles.view}>
-      <Text style={styles.text}>child 1</Text>
-      <Text style={styles.text}>child 2</Text>
-      <Text style={styles.text}>child 3</Text>
+      <Text style={styles.textOne}>child 1</Text>
+      <Text style={styles.textTwo}>child 2</Text>
+      <Text style={styles.textThree}>child 3</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   view: {
-    borderWidth: 3,
-    borderColor: 'black',
-    height: 200,
+    height: 100,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  text: {
-    borderWidth: 3,
-    borderColor: 'red',
+  textOne: {
+    backgroundColor: 'red',
+    width: 100,
+  },
+  textTwo: {
+    backgroundColor: 'green',
+    width: 100,
+    position: 'relative',
+    top: 100,
+  },
+  textThree: {
+    backgroundColor: 'purple',
+    width: 100,
   },
 });
 
